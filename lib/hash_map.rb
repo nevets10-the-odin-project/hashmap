@@ -26,11 +26,15 @@ class HashMap
 
   def has?(key)
     val = get(key)
-
     val ? true : false
   end
 
   def remove(key)
+    return unless has?(key)
+
+    val = get(key)
+    set(key, nil)
+    val
   end
 
   def length
