@@ -2,8 +2,8 @@ class HashMap
   attr_accessor :load_factor, :capacity, :buckets
 
   def initialize
-    self.buckets = []
     self.capacity = 16
+    self.buckets = Array.new(capacity, nil)
   end
 
   def hash(key)
@@ -40,7 +40,7 @@ class HashMap
 
   def length
     count = 0
-    hash_map.each do
+    buckets.each do
       count += 1
     end
     count
