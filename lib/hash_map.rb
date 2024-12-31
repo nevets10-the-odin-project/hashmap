@@ -11,7 +11,7 @@ class HashMap
 
     key.each_char { |char| hash_code = prime_number * hash_code + char.ord }
 
-    hash_code
+    hash_code % 16
   end
 
   def set(key, value)
@@ -38,6 +38,11 @@ class HashMap
   end
 
   def length
+    count = 0
+    hash_map.each do
+      count += 1
+    end
+    count
   end
 
   def clear
