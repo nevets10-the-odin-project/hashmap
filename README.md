@@ -1,2 +1,2 @@
 # hashmap
-Project: HashMap
+[Project: HashMap](https://www.theodinproject.com/lessons/ruby-hashmap)
