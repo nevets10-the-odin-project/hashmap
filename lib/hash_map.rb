@@ -20,6 +20,8 @@ class HashMap
   end
 
   def get(key)
+    hash_code = hash(key)
+    hash_map[hash_code]
   end
 
   def has?(key)
