@@ -1,3 +1,5 @@
+require_relative 'linked_list'
+
 class HashMap
   attr_accessor :load_factor, :capacity, :buckets
 
@@ -22,7 +24,9 @@ class HashMap
 
   def set(key, value)
     hash_code = hash(key)
-    buckets[hash_code] = value
+    list = buckets[hash_code] || LinkedList.new
+    list.append(value)
+    buckets[hash_code] = list
   end
 
   def get(key)

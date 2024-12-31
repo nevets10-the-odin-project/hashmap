@@ -15,6 +15,4 @@ test.set('jacket', 'blue')
 test.set('kite', 'pink')
 test.set('lion', 'golden')
 
-p test.buckets
-p test.length
-p test.entries
+puts test.values
