@@ -1,5 +1,9 @@
 class HashMap
-  attr_accessor :load_factor, :capacity
+  attr_accessor :load_factor, :capacity, :hash_map
+
+  def initialize
+    self.hash_map = []
+  end
 
   def hash(key)
     hash_code = 0
@@ -11,6 +15,8 @@ class HashMap
   end
 
   def set(key, value)
+    hash_code = hash(key)
+    hash_map[hash_code] = value
   end
 
   def get(key)

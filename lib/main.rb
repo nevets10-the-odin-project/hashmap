@@ -2,4 +2,4 @@ require_relative 'hash_map'
 
 test = HashMap.new
 
-puts test.hash('Carlos')
+test.set('Apple', 'Red')
