@@ -15,9 +15,9 @@ class HashMap
 
     key.each_char { |char| hash_code = prime_number * hash_code + char.ord }
 
-    hash_code %= 16
+    hash_code %= capacity
 
-    raise IndexError if hash_code.negative? || hash_code >= buckets.length
+    raise IndexError if hash_code.negative?
 
     hash_code
   end

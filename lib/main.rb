@@ -24,6 +24,11 @@ puts "Capacity: #{test.capacity}"
 puts "Length: #{test.length}"
 
 test.set('abcd', '1234')
+test.set('ghjk', '1234')
+test.set('tyui', '1234')
+test.set('zxcv', '1234')
+test.set('asdf', '1234')
+test.set('qwer', '1234')
 
 puts "Capacity: #{test.capacity}"
 puts "Length: #{test.length}"
