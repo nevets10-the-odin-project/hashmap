@@ -51,6 +51,11 @@ class HashMap
   end
 
   def keys
+    key_list = []
+    buckets.each_with_index do |val, i|
+      key_list << i if val
+    end
+    key_list
   end
 
   def values
