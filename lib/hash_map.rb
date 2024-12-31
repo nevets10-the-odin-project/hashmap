@@ -23,6 +23,8 @@ class HashMap
   end
 
   def set(key, value)
+    self.capacity = capacity * 2 if length >= capacity * load_factor
+
     hash_code = hash(key)
     list = buckets[hash_code] || LinkedList.new
     list.append(value)

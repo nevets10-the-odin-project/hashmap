@@ -14,5 +14,32 @@ test.set('ice cream', 'white')
 test.set('jacket', 'blue')
 test.set('kite', 'pink')
 test.set('lion', 'golden')
+test.set('human', 'steven')
+test.set('food', 'good')
+test.set('drink', 'water')
+test.set('wowow', 'wewewe')
 
 puts test.values
+puts "Capacity: #{test.capacity}"
+puts "Length: #{test.length}"
+
+test.set('abcd', '1234')
+
+puts "Capacity: #{test.capacity}"
+puts "Length: #{test.length}"
+
+puts test.keys
+puts test.values
+puts test.entries
+
+# Unintentionally correct
+puts "Get human: #{test.get('human')}"
+
+puts "Does it have elephant? #{test.has?('elephant')}"
+puts "Does it have quail? #{test.has?('quail')}"
+
+puts '-- Clear --'
+test.clear
+
+puts "Capacity: #{test.capacity}"
+puts "Length: #{test.length}"
