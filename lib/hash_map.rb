@@ -3,6 +3,7 @@ class HashMap
 
   def initialize
     self.capacity = 16
+    self.load_factor = 0.75
     self.buckets = Array.new(capacity, nil)
   end
 
