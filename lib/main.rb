@@ -17,4 +17,4 @@ test.set('lion', 'golden')
 
 p test.buckets
 p test.length
-p test.keys
+p test.values

@@ -59,6 +59,11 @@ class HashMap
   end
 
   def values
+    vals = []
+    buckets.each do |val|
+      vals << val if val
+    end
+    vals
   end
 
   def entries
