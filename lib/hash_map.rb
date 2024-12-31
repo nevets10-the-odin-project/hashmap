@@ -3,6 +3,7 @@ class HashMap
 
   def initialize
     self.buckets = []
+    self.capacity = 16
   end
 
   def hash(key)
