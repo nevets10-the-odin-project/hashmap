@@ -25,6 +25,9 @@ class HashMap
   end
 
   def has?(key)
+    val = get(key)
+
+    val ? true : false
   end
 
   def remove(key)
