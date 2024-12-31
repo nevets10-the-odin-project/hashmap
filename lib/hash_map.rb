@@ -67,5 +67,10 @@ class HashMap
   end
 
   def entries
+    entry_list = []
+    buckets.each_with_index do |val, i|
+      entry_list << [i, val] if val
+    end
+    entry_list
   end
 end
