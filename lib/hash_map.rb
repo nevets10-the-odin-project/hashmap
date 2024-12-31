@@ -40,8 +40,8 @@ class HashMap
 
   def length
     count = 0
-    buckets.each do
-      count += 1
+    buckets.each do |val|
+      count += 1 if val
     end
     count
   end
