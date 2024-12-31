@@ -17,3 +17,5 @@ test.set('lion', 'golden')
 
 p test.buckets
 p test.length
+test.clear
+p test.buckets

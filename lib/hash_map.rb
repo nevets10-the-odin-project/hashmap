@@ -47,6 +47,7 @@ class HashMap
   end
 
   def clear
+    self.buckets = Array.new(capacity, nil)
   end
 
   def keys
