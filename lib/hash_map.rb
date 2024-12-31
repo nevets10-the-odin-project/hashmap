@@ -1,8 +1,8 @@
 class HashMap
-  attr_accessor :load_factor, :capacity, :hash_map
+  attr_accessor :load_factor, :capacity, :buckets
 
   def initialize
-    self.hash_map = []
+    self.buckets = []
   end
 
   def hash(key)
@@ -16,12 +16,12 @@ class HashMap
 
   def set(key, value)
     hash_code = hash(key)
-    hash_map[hash_code] = value
+    buckets[hash_code] = value
   end
 
   def get(key)
     hash_code = hash(key)
-    hash_map[hash_code]
+    buckets[hash_code]
   end
 
   def has?(key)
